@@ -79,9 +79,7 @@ our_method_single_run = function(d, n0 = NULL, n1 = NULL, correct = FALSE){
 }
 
 
-our_method = function(d, n0 = NULL, n1 = NULL, max_eig_num = 20, null_sample = 100, 
-                      null_replicate = 100, nullscale = 1, correct = FALSE,
-                      isPermute = F, permutations = 500){
+our_method = function(d, n0 = NULL, n1 = NULL, correct = FALSE, permutations = 500){
   
   library(RSpectra)
   library(tictoc)
