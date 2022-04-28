@@ -81,9 +81,6 @@ our_method_single_run = function(d, n0 = NULL, n1 = NULL, correct = FALSE){
 
 our_method = function(d, n0 = NULL, n1 = NULL, correct = FALSE, permutations = 500){
   
-  library(RSpectra)
-  library(tictoc)
-
   n = nrow(d)
   if(is.null(n0)){n0 = ceiling(0.05 * n)}
   if(is.null(n1)){n1 = floor(0.95 * n)}
