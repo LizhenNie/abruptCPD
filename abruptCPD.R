@@ -15,7 +15,7 @@ our_method_single_run = function(d, n0 = NULL, n1 = NULL, correct = FALSE){
   dd = matrix(0, nrow = n+1, ncol = n+1) 
   for (row in 2:(n+1)){
     for (col in 2:(n+1)){
-      dd[row,col] = dd[row,col-1] + dd[row-1, col] - dd[row-1, col-1] + d[row-1,col-1]
+      dd[row,col] = dd[row, col-1] + dd[row-1, col] - dd[row-1, col-1] + d[row-1,col-1]
     }
   }
   dd = dd[2:(n+1), 2:(n+1)]
